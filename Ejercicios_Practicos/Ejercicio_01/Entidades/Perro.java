@@ -1,18 +1,25 @@
-
 package Ejercicios_Practicos.Ejercicio_01.Entidades;
 
 public class Perro {
-    
+
     // ATRIBUTOS
+    private String nombre;
     private String raza;
 
-    // Constructor vacio
     public Perro() {
     }
-    
-    // Constructor por parametros
-    public Perro(String raza) {
+
+    public Perro(String nombre, String raza) {
+        this.nombre = nombre;
         this.raza = raza;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
     }
 
     public String getRaza() {
@@ -25,7 +32,8 @@ public class Perro {
 
     @Override
     public String toString() {
-        return "Perro{" + "raza=" + raza + '}';
+        return "Perro{" + "nombre=" + nombre + ", raza=" + raza + '}';
     }
+
 
 }
