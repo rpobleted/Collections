@@ -1,6 +1,5 @@
 package Ejercicios_Practicos.Ejercicio_01.Services;
 
-
 import Ejercicios_Practicos.Ejercicio_01.Entidades.Perro;
 import java.util.ArrayList;
 import java.util.Collections;
@@ -72,17 +71,14 @@ public class PerroService {
 
         if (coincidencias == 0) {
             System.out.println("No se encuentra el valor buscado");
-        }
-
-        if (coincidencias > 0) {
+        } else {
             System.out.println(coincidencias + "Registros eliminados");
         }
         mostrarPerros();
     }
 
+    public static void ordenarPorRaza(ArrayList<Perro> listaRazasPerros) {
 
-        public static void ordenarPorRaza(ArrayList<Perro> listaRazasPerros) {
-        
         // Definimos un comparador para ordenar por raza
         Comparator<Perro> comparadorRaza = new Comparator<Perro>() {
             @Override
@@ -90,7 +86,7 @@ public class PerroService {
                 return perro1.getRaza().compareTo(perro2.getRaza());
             }
         };
-        
+
         // Ordenamos la lista utilizando el comparador
         Collections.sort(listaRazasPerros, comparadorRaza);
     }

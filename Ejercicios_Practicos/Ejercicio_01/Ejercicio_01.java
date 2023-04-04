@@ -10,7 +10,6 @@ public class Ejercicio_01 {
 
         sv.ingresoPerro();
         sv.eliminarPerro();
-        sv.mostrarPerros();
 
     }
 }
