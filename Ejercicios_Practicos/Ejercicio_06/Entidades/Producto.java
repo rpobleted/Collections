@@ -2,7 +2,7 @@ package Ejercicios_Practicos.Ejercicio_06.Entidades;
 
 import java.util.Objects;
 
-public class Producto {
+public class Producto implements Comparable<Producto> {
 
     private String nombre;
     private Integer precio;
@@ -33,9 +33,9 @@ public class Producto {
 
     @Override
     public int hashCode() {
-        int hash = 3;
-        hash = 37 * hash + Objects.hashCode(this.nombre);
-        hash = 37 * hash + Objects.hashCode(this.precio);
+        int hash = 7;
+        hash = 73 * hash + Objects.hashCode(this.nombre);
+        hash = 73 * hash + Objects.hashCode(this.precio);
         return hash;
     }
 
@@ -63,6 +63,11 @@ public class Producto {
     @Override
     public String toString() {
         return "Producto{" + "nombre=" + nombre + ", precio=" + precio + '}';
+    }
+
+    @Override
+    public int compareTo(Producto t) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
 

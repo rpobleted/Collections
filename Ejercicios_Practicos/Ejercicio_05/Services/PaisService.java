@@ -1,6 +1,7 @@
 package Ejercicios_Practicos.Ejercicio_05.Services;
 
 import Ejercicios_Practicos.Ejercicio_05.Entidades.Pais;
+import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.Iterator;
 import java.util.Scanner;
@@ -10,8 +11,8 @@ public class PaisService {
 
     Scanner leer = new Scanner(System.in).useDelimiter("\n");
     
-    //TreeSet<Pais> paises = new TreeSet();
-    HashSet<Pais> paises = new HashSet();
+    TreeSet<Pais> paises = new TreeSet();
+    //HashSet<Pais> paises = new HashSet();
     //ArrayList<Pais> paises = new ArrayList();
     Pais paisObj;
 

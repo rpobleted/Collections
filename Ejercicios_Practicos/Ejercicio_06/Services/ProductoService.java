@@ -6,6 +6,7 @@ import java.util.Map;
 import java.util.Scanner;
 
 public class ProductoService {
+
     Scanner leer = new Scanner(System.in).useDelimiter("\n");
     HashMap<String, Producto> tienda = new HashMap();
 
@@ -49,7 +50,7 @@ public class ProductoService {
         System.out.print("Ingrese el nombre : ");
         String nombre = leer.next();
         for (Map.Entry<String, Producto> entry : tienda.entrySet()) {
-            boolean valor =entry.getKey().equals(nombre);
+            boolean valor = entry.getKey().equals(nombre);
             if (valor) {
                 tienda.remove(nombre);
                 System.out.println("Producto eliminado");
