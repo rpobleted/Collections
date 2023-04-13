@@ -1,4 +1,4 @@
-package Ejericios_extra.Ejercicio_02.Entidades;
+package Ejercicios_extra.Ejercicio_02.Entidades;
 
 public class CantanteFamoso {
     

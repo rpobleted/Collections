@@ -1,6 +1,6 @@
-package Ejericios_extra.Ejercicio_02.Services;
+package Ejercicios_extra.Ejercicio_02.Services;
 
-import Ejericios_extra.Ejercicio_02.Entidades.CantanteFamoso;
+import Ejercicios_extra.Ejercicio_02.Entidades.CantanteFamoso;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.Scanner;
